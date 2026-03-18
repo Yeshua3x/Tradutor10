@@ -1,111 +1,16 @@
 {
     "phrases": [
         {
+            "japanese": "今週の終わりまでに報告書を送ってください。",
             "portuguese": "Por favor, envie o relatório até o final da semana.",
-            "japanese": "今週の終わりまでに報告書を送ってください。(Konshū no owari made ni hōkokusho o okutte kudasai.)",
+            "romaji": "Konshū no owari made ni hōkokusho o okutte kudasai.",
             "words": [
-                { "portuguese": "enviar", "japanese": "送る (okuru)" },
-                { "portuguese": "relatório", "japanese": "報告書 (hōkokusho)" },
-                { "portuguese": "final", "japanese": "終わり (owari)" },
-                { "portuguese": "semana", "japanese": "週 (shū)" }
+                { "japanese": "送る", "portuguese": "enviar", "romaji": "okuru" },
+                { "japanese": "報告書", "portuguese": "relatório", "romaji": "hōkokusho" },
+                { "japanese": "終わり", "portuguese": "final", "romaji": "owari" },
+                { "japanese": "週", "portuguese": "semana", "romaji": "shū" }
             ]
         },
-        {
-            "portuguese": "Precisamos revisar o contrato antes de assinar.",
-            "japanese": "署名する前に契約を見直す必要があります。(Shomei suru mae ni keiyaku o minaosu hitsuyō ga arimasu.)",
-            "words": [
-                { "portuguese": "revisar", "japanese": "見直す (minaosu)" },
-                { "portuguese": "contrato", "japanese": "契約 (keiyaku)" },
-                { "portuguese": "antes", "japanese": "前に (mae ni)" },
-                { "portuguese": "assinar", "japanese": "署名する (shomei suru)" }
-            ]
-        },
-        {
-            "portuguese": "É vital cumprir as regulamentações.",
-            "japanese": "規制を遵守することは重要です。(Kisei o junshu suru koto wa jūyō desu.)",
-            "words": [
-                { "portuguese": "vital", "japanese": "重要 (jūyō)" },
-                { "portuguese": "cumprir", "japanese": "遵守する (junshu suru)" },
-                { "portuguese": "regulamentações", "japanese": "規制 (kisei)" }
-            ]
-        },
-        {
-            "portuguese": "Você pode fornecer os documentos legais necessários?",
-            "japanese": "必要な法的書類を提供していただけますか？(Hitsuyō na hōteki shorui o teikyō shite itadakemasu ka?)",
-            "words": [
-                { "portuguese": "fornecer", "japanese": "提供する (teikyō suru)" },
-                { "portuguese": "legal", "japanese": "法的 (hōteki)" },
-                { "portuguese": "documentos", "japanese": "書類 (shorui)" },
-                { "portuguese": "necessários", "japanese": "必要な (hitsuyō na)" }
-            ]
-        },
-        {
-            "portuguese": "A reunião está marcada para segunda-feira às 10h.",
-            "japanese": "会議は月曜日の10時に予定されています。(Kaigi wa getsuyōbi no 10-ji ni yotei sareteimasu.)",
-            "words": [
-                { "portuguese": "reunião", "japanese": "会議 (kaigi)" },
-                { "portuguese": "marcada", "japanese": "予定されている (yotei sarete iru)" },
-                { "portuguese": "segunda-feira", "japanese": "月曜日 (getsuyōbi)" },
-                { "portuguese": "10h", "japanese": "10時 (10-ji)" }
-            ]
-        },
-        {
-            "portuguese": "Devemos analisar os dados antes de tomar uma decisão.",
-            "japanese": "決定を下す前にデータを分析する必要があります。(Kettei o kudasu mae ni dēta o bunseki suru hitsuyō ga arimasu.)",
-            "words": [
-                { "portuguese": "analisar", "japanese": "分析する (bunseki suru)" },
-                { "portuguese": "dados", "japanese": "データ (dēta)" },
-                { "portuguese": "tomar", "japanese": "下す (kudaru)" },
-                { "portuguese": "decisão", "japanese": "決定 (kettei)" }
-            ]
-        },
-        {
-            "portuguese": "Essa cláusula não é aplicável sob a legislação atual.",
-            "japanese": "この条項は現在の法律の下では適用されません。(Kono jōkō wa genzai no hōritsu no shita de wa tekiyō saremasen.)",
-            "words": [
-                { "portuguese": "cláusula", "japanese": "条項 (jōkō)" },
-                { "portuguese": "não aplicável", "japanese": "適用されない (tekiyō sarenai)" },
-                { "portuguese": "atual", "japanese": "現在の (genzai no)" },
-                { "portuguese": "lei", "japanese": "法律 (hōritsu)" }
-            ]
-        },
-        {
-            "portuguese": "Por favor, esclareça os termos do acordo.",
-            "japanese": "契約の条件を明確にしてください。(Keiyaku no jōken o meikaku ni shite kudasai.)",
-            "words": [
-                { "portuguese": "esclarecer", "japanese": "明確にする (meikaku ni suru)" },
-                { "portuguese": "termos", "japanese": "条件 (jōken)" },
-                { "portuguese": "acordo", "japanese": "契約 (keiyaku)" }
-            ]
-        },
-        {
-            "portuguese": "Estamos negociando as condições específicas do contrato.",
-            "japanese": "契約の具体的な条件を交渉しています。(Keiyaku no gutai-teki na jōken o kōshō shiteimasu.)",
-            "words": [
-                { "portuguese": "negociando", "japanese": "交渉している (kōshō shite iru)" },
-                { "portuguese": "específicas", "japanese": "具体的な (gutaiteki na)" },
-                { "portuguese": "condições", "japanese": "条件 (jōken)" },
-                { "portuguese": "contrato", "japanese": "契約 (keiyaku)" }
-            ]
-        },
-        {
-            "portuguese": "As partes devem aderir aos prazos acordados.",
-            "japanese": "当事者は合意された期限を守る必要があります。(Tōjisha wa gōi sareta kigen o mamoru hitsuyō ga arimasu.)",
-            "words": [
-                { "portuguese": "partes", "japanese": "当事者 (tōjisha)" },
-                { "portuguese": "aderir", "japanese": "守る (mamoru)" },
-                { "portuguese": "acordados", "japanese": "合意された (gōi sareta)" },
-                { "portuguese": "prazos", "japanese": "期限 (kigen)" }
-            ]
-        },
-        {
-            "portuguese": "Confirme os detalhes com o interessado.",
-            "japanese": "関係者と詳細を確認してください。(Kankei-sha to shōsai o kakunin shite kudasai.)",
-            "words": [
-                { "portuguese": "confirme", "japanese": "確認する (kakunin suru)" },
-                { "portuguese": "detalhes", "japanese": "詳細 (shōsai)" },
-                { "portuguese": "interessado", "japanese": "関係者 (kankei-sha)" }
-            ]
-        }
+        // ... outros itens
     ]
 }
