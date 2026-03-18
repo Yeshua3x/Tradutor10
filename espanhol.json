@@ -1,0 +1,111 @@
+{
+    "phrases": [
+        {
+            "portuguese": "Por favor, envie o relatório até o final da semana.",
+            "spanish": "Por favor, envía el informe antes del final de la semana.",
+            "words": [
+                { "portuguese": "enviar", "spanish": "enviar" },
+                { "portuguese": "relatório", "spanish": "informe" },
+                { "portuguese": "final", "spanish": "final" },
+                { "portuguese": "semana", "spanish": "semana" }
+            ]
+        },
+        {
+            "portuguese": "Precisamos revisar o contrato antes de assinar.",
+            "spanish": "Necesitamos revisar el contrato antes de firmar.",
+            "words": [
+                { "portuguese": "revisar", "spanish": "revisar" },
+                { "portuguese": "contrato", "spanish": "contrato" },
+                { "portuguese": "antes", "spanish": "antes" },
+                { "portuguese": "assinar", "spanish": "firmar" }
+            ]
+        },
+        {
+            "portuguese": "É vital cumprir as regulamentações.",
+            "spanish": "Es vital cumplir con las regulaciones.",
+            "words": [
+                { "portuguese": "vital", "spanish": "vital" },
+                { "portuguese": "cumprir", "spanish": "cumplir" },
+                { "portuguese": "regulamentações", "spanish": "regulaciones" }
+            ]
+        },
+        {
+            "portuguese": "Você pode fornecer os documentos legais necessários?",
+            "spanish": "¿Puedes proporcionar los documentos legales necesarios?",
+            "words": [
+                { "portuguese": "fornecer", "spanish": "proporcionar" },
+                { "portuguese": "legal", "spanish": "legal" },
+                { "portuguese": "documentos", "spanish": "documentos" },
+                { "portuguese": "necessários", "spanish": "necesarios" }
+            ]
+        },
+        {
+            "portuguese": "A reunião está marcada para segunda-feira às 10h.",
+            "spanish": "La reunión está programada para el lunes a las 10 AM.",
+            "words": [
+                { "portuguese": "reunião", "spanish": "reunión" },
+                { "portuguese": "marcada", "spanish": "programada" },
+                { "portuguese": "segunda-feira", "spanish": "lunes" },
+                { "portuguese": "10h", "spanish": "10 AM" }
+            ]
+        },
+        {
+            "portuguese": "Devemos analisar os dados antes de tomar uma decisão.",
+            "spanish": "Debemos analizar los datos antes de tomar una decisión.",
+            "words": [
+                { "portuguese": "analisar", "spanish": "analizar" },
+                { "portuguese": "dados", "spanish": "datos" },
+                { "portuguese": "tomar", "spanish": "tomar" },
+                { "portuguese": "decisão", "spanish": "decisión" }
+            ]
+        },
+        {
+            "portuguese": "Essa cláusula não é aplicável sob a legislação atual.",
+            "spanish": "Esta cláusula no es exigible bajo la legislación actual.",
+            "words": [
+                { "portuguese": "cláusula", "spanish": "cláusula" },
+                { "portuguese": "não aplicável", "spanish": "no exigible" },
+                { "portuguese": "atual", "spanish": "actual" },
+                { "portuguese": "lei", "spanish": "ley" }
+            ]
+        },
+        {
+            "portuguese": "Por favor, esclareça os termos do acordo.",
+            "spanish": "Por favor, aclara los términos del acuerdo.",
+            "words": [
+                { "portuguese": "esclarecer", "spanish": "aclarar" },
+                { "portuguese": "termos", "spanish": "términos" },
+                { "portuguese": "acordo", "spanish": "acuerdo" }
+            ]
+        },
+        {
+            "portuguese": "Estamos negociando as condições específicas do contrato.",
+            "spanish": "Estamos negociando las condiciones específicas del contrato.",
+            "words": [
+                { "portuguese": "negociando", "spanish": "negociando" },
+                { "portuguese": "específicas", "spanish": "específicas" },
+                { "portuguese": "condições", "spanish": "condiciones" },
+                { "portuguese": "contrato", "spanish": "contrato" }
+            ]
+        },
+        {
+            "portuguese": "As partes devem aderir aos prazos acordados.",
+            "spanish": "Las partes deben adherirse a los plazos acordados.",
+            "words": [
+                { "portuguese": "partes", "spanish": "partes" },
+                { "portuguese": "aderir", "spanish": "adherirse" },
+                { "portuguese": "acordados", "spanish": "acordados" },
+                { "portuguese": "prazos", "spanish": "plazos" }
+            ]
+        },
+        {
+            "portuguese": "Confirme os detalhes com o interessado.",
+            "spanish": "Confirma los detalles con el interesado.",
+            "words": [
+                { "portuguese": "confirme", "spanish": "confirma" },
+                { "portuguese": "detalhes", "spanish": "detalles" },
+                { "portuguese": "interessado", "spanish": "interesado" }
+            ]
+        }
+    ]
+}
