@@ -100,52 +100,57 @@
     <div id="result"></div>
     <div id="content"></div>
 
-    <script>
-        let translations = [];
+    
+        <script>
+    let translations = [];
 
-        // Função para carregar o arquivo JSON com as traduções
-        fetch('japanese_to_portuguese.json')  // Use o arquivo que você tiver para japonês
-            .then(response => response.json())
-            .then(data => {
-                translations = data.phrases;
-                populatePhraseList();
-            })
-            .catch(error => console.error('Erro ao carregar o JSON:', error));
+    // Função para carregar o arquivo JSON com as traduções
+    fetch('japanese_to_portuguese.json')
+        .then(response => response.json())
+        .then(data => {
+            translations = data.phrases;
+            populatePhraseList();
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-        function populatePhraseList() {
-            const contentDiv = document.getElementById('content');
-            translations.forEach(item => {
-                const phraseDiv = document.createElement('div');
-                phraseDiv.className = 'phrase';
-                phraseDiv.innerText = item.japanese; // Ajuste conforme o arquivo JSON
-                contentDiv.appendChild(phraseDiv);
-            });
-        }
-
-        // Função para verificar a frase digitada
-        document.getElementById('userInput').addEventListener('input', function() {
-            const userInput = this.value.trim();
-            const match = translations.find(item => item.japanese.toLowerCase() === userInput.toLowerCase());
-
-            if (match) {
-                const resultDiv = document.getElementById('result');
-                resultDiv.innerHTML = `
-                    <div class="translation"><strong>翻訳:</strong> ${match.portuguese}</div>
-                    <div class="translation"><strong>関連する単語:</strong></div>
-                `;
-
-                match.words.forEach(word => {
-                    resultDiv.innerHTML += `${word.japanese} - ${word.portuguese}<br>`;
-                });
-            } else {
-                document.getElementById('result').innerHTML = '';
-            }
+    function populatePhraseList() {
+        const contentDiv = document.getElementById('content');
+        translations.forEach(item => {
+            const phraseDiv = document.createElement('div');
+            phraseDiv.className = 'phrase';
+            phraseDiv.innerText = item.japanese;
+            contentDiv.appendChild(phraseDiv);
         });
+    }
 
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    // Função para verificar a frase digitada
+    document.getElementById('userInput').addEventListener('input', function() {
+        const userInput = this.value.trim();
+        const match = translations.find(item => item.japanese === userInput);
+
+        if (match) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <div class="translation"><strong>翻訳:</strong> ${match.portuguese}</div>
+                <div class="translation"><strong>発音:</strong> ${match.romaji}</div> <!-- Adicionando a pronúncia -->
+                <div class="translation"><strong>関連する単語:</strong></div>
+            `;
+
+            match.words.forEach(word => {
+                resultDiv.innerHTML += `${word.japanese} (${word.romaji}) - ${word.portuguese}<br>`; // Adicionando a pronúncia das palavras
+            });
+        } else {
+            document.getElementById('result').innerHTML = '';
         }
+    });
+
+    function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    window.onload = populatePhraseList;
+
     </script>
 </body>
 </html>
