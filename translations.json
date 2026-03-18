@@ -1,0 +1,111 @@
+{
+    "phrases": [
+        {
+            "english": "Please submit the report by the end of the week.",
+            "portuguese": "Por favor, envie o relatório até o final da semana.",
+            "words": [
+                { "english": "submit", "portuguese": "enviar" },
+                { "english": "report", "portuguese": "relatório" },
+                { "english": "end", "portuguese": "final" },
+                { "english": "week", "portuguese": "semana" }
+            ]
+        },
+        {
+            "english": "We need to review the contract before signing.",
+            "portuguese": "Precisamos revisar o contrato antes de assinar.",
+            "words": [
+                { "english": "review", "portuguese": "revisar" },
+                { "english": "contract", "portuguese": "contrato" },
+                { "english": "before", "portuguese": "antes" },
+                { "english": "signing", "portuguese": "assinar" }
+            ]
+        },
+        {
+            "english": "It is vital to comply with the regulations.",
+            "portuguese": "É vital cumprir as regulamentações.",
+            "words": [
+                { "english": "vital", "portuguese": "vital" },
+                { "english": "comply", "portuguese": "cumprir" },
+                { "english": "regulations", "portuguese": "regulamentações" }
+            ]
+        },
+        {
+            "english": "Can you provide the legal documents required?",
+            "portuguese": "Você pode fornecer os documentos legais necessários?",
+            "words": [
+                { "english": "provide", "portuguese": "fornecer" },
+                { "english": "legal", "portuguese": "legal" },
+                { "english": "documents", "portuguese": "documentos" },
+                { "english": "required", "portuguese": "necessários" }
+            ]
+        },
+        {
+            "english": "The meeting is scheduled for Monday at 10 AM.",
+            "portuguese": "A reunião está marcada para segunda-feira às 10h.",
+            "words": [
+                { "english": "meeting", "portuguese": "reunião" },
+                { "english": "scheduled", "portuguese": "marcada" },
+                { "english": "Monday", "portuguese": "segunda-feira" },
+                { "english": "10 AM", "portuguese": "10h" }
+            ]
+        },
+        {
+            "english": "We must analyze the data before making a decision.",
+            "portuguese": "Devemos analisar os dados antes de tomar uma decisão.",
+            "words": [
+                { "english": "analyze", "portuguese": "analisar" },
+                { "english": "data", "portuguese": "dados" },
+                { "english": "making", "portuguese": "tomar" },
+                { "english": "decision", "portuguese": "decisão" }
+            ]
+        },
+        {
+            "english": "This clause is unenforceable under current law.",
+            "portuguese": "Essa cláusula não é aplicável sob a legislação atual.",
+            "words": [
+                { "english": "clause", "portuguese": "cláusula" },
+                { "english": "unenforceable", "portuguese": "não aplicável" },
+                { "english": "current", "portuguese": "atual" },
+                { "english": "law", "portuguese": "lei" }
+            ]
+        },
+        {
+            "english": "Please clarify the terms of the agreement.",
+            "portuguese": "Por favor, esclareça os termos do acordo.",
+            "words": [
+                { "english": "clarify", "portuguese": "esclarecer" },
+                { "english": "terms", "portuguese": "termos" },
+                { "english": "agreement", "portuguese": "acordo" }
+            ]
+        },
+        {
+            "english": "We are negotiating the specific conditions of the contract.",
+            "portuguese": "Estamos negociando as condições específicas do contrato.",
+            "words": [
+                { "english": "negotiating", "portuguese": "negociando" },
+                { "english": "specific", "portuguese": "específicas" },
+                { "english": "conditions", "portuguese": "condições" },
+                { "english": "contract", "portuguese": "contrato" }
+            ]
+        },
+        {
+            "english": "The parties must adhere to the agreed timelines.",
+            "portuguese": "As partes devem aderir aos prazos acordados.",
+            "words": [
+                { "english": "parties", "portuguese": "partes" },
+                { "english": "adhere", "portuguese": "aderir" },
+                { "english": "agreed", "portuguese": "acordados" },
+                { "english": "timelines", "portuguese": "prazos" }
+            ]
+        },
+        {
+            "english": "Confirm the details with the stakeholder.",
+            "portuguese": "Confirme os detalhes com o interessado.",
+            "words": [
+                { "english": "confirm", "portuguese": "confirme" },
+                { "english": "details", "portuguese": "detalhes" },
+                { "english": "stakeholder", "portuguese": "interessado" }
+            ]
+        }
+    ]
+}
