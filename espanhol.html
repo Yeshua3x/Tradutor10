@@ -116,7 +116,7 @@
             translations.forEach(item => {
                 const phraseDiv = document.createElement('div');
                 phraseDiv.className = 'phrase';
-                phraseDiv.innerText = item.english;
+                phraseDiv.innerText = item.espanhol;
                 contentDiv.appendChild(phraseDiv);
             });
         }
@@ -124,7 +124,7 @@
         // Função para verificar a frase digitada
         document.getElementById('userInput').addEventListener('input', function() {
             const userInput = this.value.trim();
-            const match = translations.find(item => item.english.toLowerCase() === userInput.toLowerCase());
+            const match = espanhol.find(item => item.espanhol.toLowerCase() === userInput.toLowerCase());
 
             if (match) {
                 const resultDiv = document.getElementById('result');
@@ -134,7 +134,7 @@
                 `;
 
                 match.words.forEach(word => {
-                    resultDiv.innerHTML += `${word.english} - ${word.portuguese}<br>`;
+                    resultDiv.innerHTML += `${word.portuguese} - ${word.espanhol}<br>`;
                 });
             } else {
                 document.getElementById('result').innerHTML = '';
