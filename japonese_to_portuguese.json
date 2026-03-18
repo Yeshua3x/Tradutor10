@@ -1,0 +1,111 @@
+{
+    "phrases": [
+        {
+            "portuguese": "Por favor, envie o relatório até o final da semana.",
+            "japanese": "今週の終わりまでに報告書を送ってください。",
+            "words": [
+                { "portuguese": "enviar", "japanese": "送る" },
+                { "portuguese": "relatório", "japanese": "報告書" },
+                { "portuguese": "final", "japanese": "終わり" },
+                { "portuguese": "semana", "japanese": "週" }
+            ]
+        },
+        {
+            "portuguese": "Precisamos revisar o contrato antes de assinar.",
+            "japanese": "署名する前に契約を見直す必要があります。",
+            "words": [
+                { "portuguese": "revisar", "japanese": "見直す" },
+                { "portuguese": "contrato", "japanese": "契約" },
+                { "portuguese": "antes", "japanese": "前に" },
+                { "portuguese": "assinar", "japanese": "署名する" }
+            ]
+        },
+        {
+            "portuguese": "É vital cumprir as regulamentações.",
+            "japanese": "規制を遵守することは重要です。",
+            "words": [
+                { "portuguese": "vital", "japanese": "重要" },
+                { "portuguese": "cumprir", "japanese": "遵守する" },
+                { "portuguese": "regulamentações", "japanese": "規制" }
+            ]
+        },
+        {
+            "portuguese": "Você pode fornecer os documentos legais necessários?",
+            "japanese": "必要な法的書類を提供していただけますか？",
+            "words": [
+                { "portuguese": "fornecer", "japanese": "提供する" },
+                { "portuguese": "legal", "japanese": "法的" },
+                { "portuguese": "documentos", "japanese": "書類" },
+                { "portuguese": "necessários", "japanese": "必要な" }
+            ]
+        },
+        {
+            "portuguese": "A reunião está marcada para segunda-feira às 10h.",
+            "japanese": "会議は月曜日の10時に予定されています。",
+            "words": [
+                { "portuguese": "reunião", "japanese": "会議" },
+                { "portuguese": "marcada", "japanese": "予定されている" },
+                { "portuguese": "segunda-feira", "japanese": "月曜日" },
+                { "portuguese": "10h", "japanese": "10時" }
+            ]
+        },
+        {
+            "portuguese": "Devemos analisar os dados antes de tomar uma decisão.",
+            "japanese": "決定を下す前にデータを分析する必要があります。",
+            "words": [
+                { "portuguese": "analisar", "japanese": "分析する" },
+                { "portuguese": "dados", "japanese": "データ" },
+                { "portuguese": "tomar", "japanese": "下す" },
+                { "portuguese": "decisão", "japanese": "決定" }
+            ]
+        },
+        {
+            "portuguese": "Essa cláusula não é aplicável sob a legislação atual.",
+            "japanese": "この条項は現在の法律の下では適用されません。",
+            "words": [
+                { "portuguese": "cláusula", "japanese": "条項" },
+                { "portuguese": "não aplicável", "japanese": "適用されない" },
+                { "portuguese": "atual", "japanese": "現在の" },
+                { "portuguese": "lei", "japanese": "法律" }
+            ]
+        },
+        {
+            "portuguese": "Por favor, esclareça os termos do acordo.",
+            "japanese": "契約の条件を明確にしてください。",
+            "words": [
+                { "portuguese": "esclarecer", "japanese": "明確にする" },
+                { "portuguese": "termos", "japanese": "条件" },
+                { "portuguese": "acordo", "japanese": "契約" }
+            ]
+        },
+        {
+            "portuguese": "Estamos negociando as condições específicas do contrato.",
+            "japanese": "契約の具体的な条件を交渉しています。",
+            "words": [
+                { "portuguese": "negociando", "japanese": "交渉している" },
+                { "portuguese": "específicas", "japanese": "具体的な" },
+                { "portuguese": "condições", "japanese": "条件" },
+                { "portuguese": "contrato", "japanese": "契約" }
+            ]
+        },
+        {
+            "portuguese": "As partes devem aderir aos prazos acordados.",
+            "japanese": "当事者は合意された期限を守る必要があります。",
+            "words": [
+                { "portuguese": "partes", "japanese": "当事者" },
+                { "portuguese": "aderir", "japanese": "守る" },
+                { "portuguese": "acordados", "japanese": "合意された" },
+                { "portuguese": "prazos", "japanese": "期限" }
+            ]
+        },
+        {
+            "portuguese": "Confirme os detalhes com o interessado.",
+            "japanese": "関係者と詳細を確認してください。",
+            "words": [
+                { "portuguese": "confirme", "japanese": "確認する" },
+                { "portuguese": "detalhes", "japanese": "詳細" },
+                { "portuguese": "interessado", "japanese": "関係者" }
+            ]
+        }
+    ]
+}
