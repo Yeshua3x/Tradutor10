@@ -12,53 +12,21 @@
             font-family: 'Arial', sans-serif;
             background: #f0f0f0;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
         }
         header {
             width: 100%;
             background: #007BFF;
             color: #fff;
             padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .menu-icon {
-            cursor: pointer;
-            font-size: 1.5em;
-        }
-        nav {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-        nav a {
-            padding: 10px 15px;
-            text-decoration: none;
-            color: #007BFF;
-        }
-        nav a:hover {
-            background: #f0f0f0;
-        }
-        .phrase, .translation {
-            margin-bottom: 15px;
-            font-size: 1.2em;
+            text-align: center;
         }
         input {
             padding: 10px;
             width: 100%;
-            font-size: 1em;
             margin-top: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -71,39 +39,25 @@
             margin-top: 20px;
             width: 100%;
         }
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .menu-icon {
-                margin-bottom: 10px;
-            }
+        .phrase {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Tradutor de Frases</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <nav id="navMenu">
-            <a href="ingles.html">Inglês</a>
-            <a href="espanhol.html">Espanhol</a>
-            <a href="frances.html">Francês</a>
-            <a href="alemao.html">Alemão</a>
-            <!-- Adicione mais links de idiomas conforme necessário -->
-        </nav>
     </header>
     
-    <input type="text" id="userInput" placeholder="Digite uma frase em inglês..." />
+    <input type="text" id="userInput" placeholder="Digite uma frase em português..." />
     <div id="result"></div>
     <div id="content"></div>
 
     <script>
         let translations = [];
 
-        // Função para cargar arquivo JSON
-        fetch('espanhol.json')
+        // Função para carregar o arquivo JSON com as traduções
+        fetch('portuguese_to_spanish.json')  // Mudança aqui para o novo nome
             .then(response => response.json())
             .then(data => {
                 translations = data.phrases;
@@ -116,7 +70,7 @@
             translations.forEach(item => {
                 const phraseDiv = document.createElement('div');
                 phraseDiv.className = 'phrase';
-                phraseDiv.innerText = item.espanhol;
+                phraseDiv.innerText = item.portuguese;
                 contentDiv.appendChild(phraseDiv);
             });
         }
@@ -124,27 +78,22 @@
         // Função para verificar a frase digitada
         document.getElementById('userInput').addEventListener('input', function() {
             const userInput = this.value.trim();
-            const match = espanhol.find(item => item.espanhol.toLowerCase() === userInput.toLowerCase());
+            const match = translations.find(item => item.portuguese.toLowerCase() === userInput.toLowerCase());
 
             if (match) {
                 const resultDiv = document.getElementById('result');
                 resultDiv.innerHTML = `
-                    <div class="translation"><strong>Tradução:</strong> ${match.portuguese}</div>
+                    <div class="translation"><strong>Tradução:</strong> ${match.spanish}</div>
                     <div class="translation"><strong>Palavras Relevantes:</strong></div>
                 `;
 
                 match.words.forEach(word => {
-                    resultDiv.innerHTML += `${word.portuguese} - ${word.espanhol}<br>`;
+                    resultDiv.innerHTML += `${word.portuguese} - ${word.spanish}<br>`;
                 });
             } else {
                 document.getElementById('result').innerHTML = '';
             }
         });
-
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
     </script>
 </body>
 </html>
