@@ -80,13 +80,25 @@
         .home-btn:hover {
             background: #0056b3;
         }
+        .menu {
+    /* Estilo do menu */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* outros estilos */
+}
+.close-icon {
+    cursor: pointer;
+    font-size: 24px; /* Tamanho do ícone de fechar */
+    /* outros estilos */
+}
     </style>
 </head>
 <body>
     <header>
         <h1>Tradutor de Frases</h1>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <nav id="navMenu">
+<div class="menu" id="menu" style="display: none;">
+    <div class="close-icon" onclick="toggleMenu()">×</div>
             <a href="ingles.html">Inglês</a>
             <a href="espanhol.html">Espanhol</a>
             <a href="frances.html">Francês</a>
@@ -142,10 +154,12 @@
             }
         });
 
+                                            }
+
         function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
+    const menu = document.getElementById('menu');
+    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+}
     </script>
 </body>
 </html>
