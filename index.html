@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de Frases</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: #007BFF;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .menu-icon {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            background: #f0f0f0;
+        }
+        .input-section {
+            margin: 20px 0;
+            width: 90%;
+            max-width: 600px;
+        }
+        input {
+            padding: 15px;
+            width: 100%;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        main {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            padding: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tradutor de Frases</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu" style="display: none;">
+            <a href="#ingles">Inglês</a>
+            <a href="#espanhol">Espanhol</a>
+            <a href="#japones">Japonês</a>
+            <a href="#alemao">Alemão</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ingles">
+            <h2>Inglês</h2>
+            <p>Insira uma frase em inglês para tradução.</p>
+            <input type="text" placeholder="Digite uma frase em inglês..." />
+        </section>
+        <section id="espanhol">
+            <h2>Espanhol</h2>
+            <p>Aqui você pode usar o tradutor para espanhol.</p>
+        </section>
+        <section id="japones">
+            <h2>Japonês</h2>
+            <p>Insira uma frase em japonês para tradução.</p>
+        </section>
+        <section id="alemao">
+            <h2>Alemão</h2>
+            <p>Traduza suas frases para o alemão aqui.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tradutor de Frases. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navMenu = document.getElementById('navMenu');
+
+        menuIcon.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>
