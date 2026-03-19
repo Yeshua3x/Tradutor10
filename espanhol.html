@@ -12,10 +12,11 @@
             font-family: 'Arial', sans-serif;
             background: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
         }
         header {
             width: 100%;
@@ -50,9 +51,14 @@
         nav a:hover {
             background: #f0f0f0;
         }
+        .phrase, .translation {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
         input {
             padding: 10px;
             width: 100%;
+            font-size: 1em;
             margin-top: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -65,57 +71,39 @@
             margin-top: 20px;
             width: 100%;
         }
-        .phrase {
-            margin: 10px 0;
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-icon {
+                margin-bottom: 10px;
+            }
         }
-        .home-btn {
-            margin-top: 20px;
-            padding: 10px 15px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .home-btn:hover {
-            background: #0056b3;
-        }
-        .menu {
-    /* Estilo do menu */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    /* outros estilos */
-}
-.close-icon {
-    cursor: pointer;
-    font-size: 24px; /* Tamanho do ícone de fechar */
-    /* outros estilos */
-}
     </style>
 </head>
 <body>
     <header>
         <h1>Tradutor de Frases</h1>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
-<div class="menu" id="menu" style="display: none;">
-    <div class="close-icon" onclick="toggleMenu()">×</div>
+        <nav id="navMenu">
             <a href="ingles.html">Inglês</a>
             <a href="espanhol.html">Espanhol</a>
-            <a href="frances.html">Francês</a>
+            <a href="japones.html">Japonês</a>
             <a href="alemao.html">Alemão</a>
-              <a class="home-btn" href="index.html">Voltar para a Home</a>
+            <!-- Adicione mais links de idiomas conforme necessário -->
         </nav>
     </header>
     
-    <input type="text" id="userInput" placeholder="Digite uma frase em português..." />
+    <input type="text" id="userInput" placeholder="Digite uma frase em inglês..." />
     <div id="result"></div>
     <div id="content"></div>
 
     <script>
         let translations = [];
 
-        // Função para carregar o arquivo JSON com as traduções
-        fetch('portuguese_to_spanish.json')  
+        // Função para cargar arquivo JSON
+        fetch('portuguese_to_spanish.json')
             .then(response => response.json())
             .then(data => {
                 translations = data.phrases;
@@ -128,7 +116,7 @@
             translations.forEach(item => {
                 const phraseDiv = document.createElement('div');
                 phraseDiv.className = 'phrase';
-                phraseDiv.innerText = item.portuguese;
+                phraseDiv.innerText = item.spanish;
                 contentDiv.appendChild(phraseDiv);
             });
         }
@@ -136,29 +124,27 @@
         // Função para verificar a frase digitada
         document.getElementById('userInput').addEventListener('input', function() {
             const userInput = this.value.trim();
-            const match = translations.find(item => item.portuguese.toLowerCase() === userInput.toLowerCase());
+            const match = translations.find(item => item.spanish.toLowerCase() === userInput.toLowerCase());
 
             if (match) {
                 const resultDiv = document.getElementById('result');
                 resultDiv.innerHTML = `
-                    <div class="translation"><strong>Tradução:</strong> ${match.spanish}</div>
+                    <div class="translation"><strong>Tradução:</strong> ${match.portuguese}</div>
                     <div class="translation"><strong>Palavras Relevantes:</strong></div>
                 `;
 
                 match.words.forEach(word => {
-                    resultDiv.innerHTML += `${word.portuguese} - ${word.spanish}<br>`;
+                    resultDiv.innerHTML += `${word.spanish} - ${word.portuguese}<br>`;
                 });
             } else {
                 document.getElementById('result').innerHTML = '';
             }
         });
 
-                                            }
-
         function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
-}
+            const menu = document.getElementById('navMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
 </body>
 </html>
